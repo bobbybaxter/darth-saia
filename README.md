@@ -1,6 +1,6 @@
 # Darth Saia's SWGOH Dashboard
 ## Overview
-Darth Saia's Star Wars Galaxy of Heroes (SWGOH) Dashboard is a tool to help SWGOH players coordinate a gameplan for upgrading their heroes and easily track their progress.
+Darth Saia's Star Wars Galaxy of Heroes (SWGOH) Dashboard is a tool to help players coordinate a gameplan for upgrading their heroes and easily track their progress.
 
 ## Future Plans
 **Short Term**
