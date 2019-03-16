@@ -3,7 +3,7 @@
 Darth Saia's Star Wars Galaxy of Heroes (SWGOH) Dashboard is a tool to help SWGOH players coordinate a gameplan for upgrading their heroes and easily track their progress.
 
 ## Screenshots
-![image of Darth Saia's SWGOH Dashboard webpage]()
+![image of Darth Saia's SWGOH Dashboard webpage](https://raw.githubusercontent.com/bobbybaxter/darth-saia/master/img/screenshot.png)
 
 ## Getting Started
 Clone the repo:
