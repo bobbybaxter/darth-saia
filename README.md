@@ -47,5 +47,5 @@ In your web browser, copy and paste this:
 - implemented initial api get request
 
 ### 03/02/2019 - v0.1.0
-- added readme
-- committed initial dashboard UI
+* added readme
+* committed initial dashboard UI
