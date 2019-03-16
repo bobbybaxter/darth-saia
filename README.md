@@ -8,7 +8,7 @@ Darth Saia's Star Wars Galaxy of Heroes (SWGOH) Dashboard is a tool to help SWGO
 ## Getting Started
 Clone the repo:
 ```
-$git clone https://github.com/bobbybaxter/personal-bio-site
+$git clone https://github.com/bobbybaxter/darth-saia
 ```
 
 ### Prerequisites
@@ -18,7 +18,7 @@ $npm install -g http-server
 ```
 
 ## Running
-Browse to the personal-bio-site/ directory and run HTTP Server by typing the following command into the terminal:
+Browse to the darth-saia/ directory and run HTTP Server by typing the following command into the terminal:
 ```
 $ hs -p 5000
 ```
