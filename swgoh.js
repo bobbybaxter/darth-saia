@@ -17,15 +17,17 @@ request.onload = function () {
   const buildCharTable = () => {
     let domString = '';
     for(let i = 0; i < data.units.length; i++) {
-      domString += `<tr>`;
-      domString +=   `<td>${data.units[i].data.name}</td>`;
-      domString +=   `<td>${data.units[i].data.rarity}</td>`;
-      domString +=   `<td>${data.units[i].data.gear_level}</td>`;
-      domString +=   `<td>${data.units[i].data.level}</td>`;
-      domString += `</tr>`
+      if (data.units[i].data.combat_type === 1) {
+        domString += `<tr>`;
+        domString +=   `<td>${data.units[i].data.name}</td>`;
+        domString +=   `<td>${data.units[i].data.rarity}</td>`;
+        domString +=   `<td>${data.units[i].data.gear_level}</td>`;
+        domString +=   `<td>${data.units[i].data.level}</td>`;
+        domString += `</tr>`
+      }
     }
     printToDom('tableArea', domString);
-  };
+  }
 
   const init = () => {
     buildCharTable();
