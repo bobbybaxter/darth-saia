@@ -7,7 +7,7 @@ const printToDom = (divId, textToPrint) => {
 let request = new XMLHttpRequest();
 
 // Open a new connection, using the GET request on the URL endpoint
-request.open('GET', 'https://cors.io/?https://swgoh.gg/api/player/492912899/', true);
+request.open('GET', 'https://cors-anywhere.herokuapp.com/https://swgoh.gg/api/player/492912899', true);
 
 request.onload = function () {
   // Begin accessing JSON data here
