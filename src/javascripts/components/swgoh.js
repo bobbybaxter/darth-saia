@@ -12,27 +12,44 @@ const buildDataTable = () => {
     $('#charList').DataTable({
       // data: allCharacters,
       retrieve: true,
-      columns: [
-        { width: '40%' },
-        { width: '20%' },
-        { width: '20%' },
-        { width: '20%' },
-      ],
+      // columns: [
+      //   { width: '25%' },
+      //   { width: '25%' },
+      //   { width: '25%' },
+      //   { width: '25%' },
+      // ],
       paging: false,
-      // scrollY: "310px",
-      scrollCollapse: true,
+      scrollY: '300px',
+      scrollCollapse: false,
+      autoWidth: true,
     });
   });
 };
 
 const getNewRosterArray = () => newRosterArray;
 
+const getRowColor = (toon) => {
+  console.error(toon.rarity);
+  let color = '';
+  if (toon.rarity === 0) {
+    color = 'table-danger text-dark';
+    console.error('toon rarity = 0', toon.name);
+  } else if (toon.rarity === 7 && toon.gearLvl === 12 && toon.level === 85) {
+    color = 'table-success text-dark';
+  } else {
+    color = 'default';
+  }
+  console.error(color);
+  return color;
+};
+
 const buildCharTable = () => {
   const arrayToPrint = getNewRosterArray();
   console.error(arrayToPrint);
   let domString = '';
   $.each(arrayToPrint, (i) => {
-    domString += '<tr>';
+    const rowColor = getRowColor(arrayToPrint[i]);
+    domString += `<tr class="${rowColor}">`;
     domString += `<td>${arrayToPrint[i].name}</td>`;
     domString += `<td>${arrayToPrint[i].rarity}</td>`;
     domString += `<td>${arrayToPrint[i].gearLvl}</td>`;
